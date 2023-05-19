@@ -1,1 +1,417 @@
-{"@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld", "author": "OpenSpending", "bytes": 4802719, "count_of_rows": 33424, "countryCode": "US", "currencyCode": "USD", "description": "List of DC public government employees and salaries in 2011; acquired by Washington Times via FOIA requests. \r\n\r\nOriginally published at: \r\nhttp://www.washingtontimes.com/dcsalaries/\r\n\r\nby @lukerosiak\u200e", "hash": "ecf18cc8ce3824daa2e27dbb11f1ec7e", "model": {"dimensions": {"date": {"attributes": {"hired": {"source": "hired", "title": "hired"}, "hired_name": {"source": "hired_name", "title": "hired_name"}, "time": {"source": "time", "title": "time"}, "time_name": {"source": "time_name", "title": "time_name"}}, "dimensionType": "datetime", "primaryKey": ["hired_name", "hired", "time_name", "time"]}, "unknown": {"attributes": {"first": {"source": "first", "title": "first"}, "hired_day": {"source": "hired_day", "title": "hired_day"}, "hired_month": {"source": "hired_month", "title": "hired_month"}, "hired_quarter": {"source": "hired_quarter", "title": "hired_quarter"}, "hired_week": {"source": "hired_week", "title": "hired_week"}, "hired_year": {"source": "hired_year", "title": "hired_year"}, "hired_yearmonth": {"source": "hired_yearmonth", "title": "hired_yearmonth"}, "identifier": {"source": "identifier", "title": "identifier"}, "position": {"source": "position", "title": "position"}, "time_day": {"source": "time_day", "title": "time_day"}, "time_month": {"source": "time_month", "title": "time_month"}, "time_quarter": {"source": "time_quarter", "title": "time_quarter"}, "time_week": {"source": "time_week", "title": "time_week"}, "time_year": {"source": "time_year", "title": "time_year"}, "time_yearmonth": {"source": "time_yearmonth", "title": "time_yearmonth"}, "to_label": {"labelfor": "to_name", "source": "to_label", "title": "to_label"}, "to_name": {"source": "to_name", "title": "to_name"}}, "dimensionType": "other", "primaryKey": ["to_name", "hired_year", "hired_month", "hired_day", "hired_week", "hired_yearmonth", "hired_quarter", "time_year", "time_month", "time_day", "time_week", "time_yearmonth", "time_quarter", "position", "identifier", "first"]}}, "measures": {"amount": {"currency": "USD", "source": "amount", "title": "amount"}, "unique_id": {"currency": "USD", "source": "unique-id", "title": "unique-id"}}}, "name": "__os_imported__dc-city-salaries", "originalName": "dc-city-salaries", "profiles": {"fiscal": "*", "tabular": "*"}, "resources": [{"bytes": 4802719, "count_of_rows": 33424, "dialect": {"delimiter": ",", "doubleQuote": true, "lineTerminator": "\r\n", "quoteChar": "\"", "skipInitialSpace": false}, "encoding": "utf-8", "format": "csv", "hash": "3d9ea6f80be6910ef1ec06708c5721e0", "mediatype": "text/csv", "name": "__os_imported__dc-city-salaries", "path": "data/__os_imported__dc-city-salaries.csv", "schema": {"fields": [{"conceptType": "unknown", "format": "default", "name": "to_name", "osType": "unknown:string-1:code", "slug": "to_name", "title": "to_name", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "to_label", "osType": "unknown:string-1:label", "slug": "to_label", "title": "to_label", "type": "string"}, {"conceptType": "value", "decimalChar": ".", "format": "default", "groupChar": "", "name": "amount", "osType": "value", "slug": "amount", "title": "amount", "type": "number"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "hired_name", "osType": "date:generic", "slug": "hired_name", "title": "hired_name", "type": "date"}, {"conceptType": "unknown", "format": "default", "name": "hired_year", "osType": "unknown:string-2:code", "slug": "hired_year", "title": "hired_year", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "hired_month", "osType": "unknown:string-3:code", "slug": "hired_month", "title": "hired_month", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "hired_day", "osType": "unknown:string-4:code", "slug": "hired_day", "title": "hired_day", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "hired_week", "osType": "unknown:string-5:code", "slug": "hired_week", "title": "hired_week", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "hired_yearmonth", "osType": "unknown:string-6:code", "slug": "hired_yearmonth", "title": "hired_yearmonth", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "hired_quarter", "osType": "unknown:string-7:code", "slug": "hired_quarter", "title": "hired_quarter", "type": "string"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "hired", "osType": "date:generic", "slug": "hired", "title": "hired", "type": "date"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "time_name", "osType": "date:generic", "slug": "time_name", "title": "time_name", "type": "date"}, {"conceptType": "unknown", "format": "default", "name": "time_year", "osType": "unknown:string-8:code", "slug": "time_year", "title": "time_year", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_month", "osType": "unknown:string-9:code", "slug": "time_month", "title": "time_month", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_day", "osType": "unknown:string-10:code", "slug": "time_day", "title": "time_day", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_week", "osType": "unknown:string-11:code", "slug": "time_week", "title": "time_week", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_yearmonth", "osType": "unknown:string-12:code", "slug": "time_yearmonth", "title": "time_yearmonth", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_quarter", "osType": "unknown:string-13:code", "slug": "time_quarter", "title": "time_quarter", "type": "string"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "time", "osType": "date:generic", "slug": "time", "title": "time", "type": "date"}, {"conceptType": "value", "decimalChar": ".", "format": "default", "groupChar": "", "name": "unique-id", "osType": "value", "slug": "unique_id", "title": "unique-id", "type": "number"}, {"conceptType": "unknown", "format": "default", "name": "position", "osType": "unknown:string-14:code", "slug": "position", "title": "position", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "identifier", "osType": "unknown:string-15:code", "slug": "identifier", "title": "identifier", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "first", "osType": "unknown:string-16:code", "slug": "first", "title": "first", "type": "string"}], "primaryKey": ["to_name", "hired_name", "hired_year", "hired_month", "hired_day", "hired_week", "hired_yearmonth", "hired_quarter", "hired", "time_name", "time_year", "time_month", "time_day", "time_week", "time_yearmonth", "time_quarter", "time", "position", "identifier", "first"]}, "profile": "data-resource"}], "sources": [{"title": "4618", "url": "https://docs.google.com/spreadsheet/pub?key=0AvdkMlz2NopEdDFqM29pUVhfd3I4ckh4NGNzRkhYUkE&single=true&gid=0&output=csv"}], "title": "Washington DC employee salaries", "profile": "data-package", "owner": "6018ab87076187018fc29c94a68a3cd2"}
+{
+  "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
+  "author": "OpenSpending",
+  "bytes": 4802719,
+  "count_of_rows": 33424,
+  "countryCode": "US",
+  "currencyCode": "USD",
+  "description": "List of DC public government employees and salaries in 2011; acquired by Washington Times via FOIA requests. \r\n\r\nOriginally published at: \r\nhttp://www.washingtontimes.com/dcsalaries/\r\n\r\nby @lukerosiak\u200e",
+  "hash": "ecf18cc8ce3824daa2e27dbb11f1ec7e",
+  "model": {
+    "dimensions": {
+      "date": {
+        "attributes": {
+          "hired": {
+            "source": "hired",
+            "title": "hired"
+          },
+          "hired_name": {
+            "source": "hired_name",
+            "title": "hired_name"
+          },
+          "time": {
+            "source": "time",
+            "title": "time"
+          },
+          "time_name": {
+            "source": "time_name",
+            "title": "time_name"
+          }
+        },
+        "dimensionType": "datetime",
+        "primaryKey": [
+          "hired_name",
+          "hired",
+          "time_name",
+          "time"
+        ]
+      },
+      "unknown": {
+        "attributes": {
+          "first": {
+            "source": "first",
+            "title": "first"
+          },
+          "hired_day": {
+            "source": "hired_day",
+            "title": "hired_day"
+          },
+          "hired_month": {
+            "source": "hired_month",
+            "title": "hired_month"
+          },
+          "hired_quarter": {
+            "source": "hired_quarter",
+            "title": "hired_quarter"
+          },
+          "hired_week": {
+            "source": "hired_week",
+            "title": "hired_week"
+          },
+          "hired_year": {
+            "source": "hired_year",
+            "title": "hired_year"
+          },
+          "hired_yearmonth": {
+            "source": "hired_yearmonth",
+            "title": "hired_yearmonth"
+          },
+          "identifier": {
+            "source": "identifier",
+            "title": "identifier"
+          },
+          "position": {
+            "source": "position",
+            "title": "position"
+          },
+          "time_day": {
+            "source": "time_day",
+            "title": "time_day"
+          },
+          "time_month": {
+            "source": "time_month",
+            "title": "time_month"
+          },
+          "time_quarter": {
+            "source": "time_quarter",
+            "title": "time_quarter"
+          },
+          "time_week": {
+            "source": "time_week",
+            "title": "time_week"
+          },
+          "time_year": {
+            "source": "time_year",
+            "title": "time_year"
+          },
+          "time_yearmonth": {
+            "source": "time_yearmonth",
+            "title": "time_yearmonth"
+          },
+          "to_label": {
+            "labelfor": "to_name",
+            "source": "to_label",
+            "title": "to_label"
+          },
+          "to_name": {
+            "source": "to_name",
+            "title": "to_name"
+          }
+        },
+        "dimensionType": "other",
+        "primaryKey": [
+          "to_name",
+          "hired_year",
+          "hired_month",
+          "hired_day",
+          "hired_week",
+          "hired_yearmonth",
+          "hired_quarter",
+          "time_year",
+          "time_month",
+          "time_day",
+          "time_week",
+          "time_yearmonth",
+          "time_quarter",
+          "position",
+          "identifier",
+          "first"
+        ]
+      }
+    },
+    "measures": {
+      "amount": {
+        "currency": "USD",
+        "source": "amount",
+        "title": "amount"
+      },
+      "unique_id": {
+        "currency": "USD",
+        "source": "unique-id",
+        "title": "unique-id"
+      }
+    }
+  },
+  "name": "__os_imported__dc-city-salaries",
+  "originalName": "dc-city-salaries",
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
+  },
+  "resources": [
+    {
+      "bytes": 4802719,
+      "count_of_rows": 33424,
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "3d9ea6f80be6910ef1ec06708c5721e0",
+      "mediatype": "text/csv",
+      "name": "__os_imported__dc-city-salaries",
+      "path": "https://storage.openspending.org/__os_imported__dc-city-salaries.csv",
+      "schema": {
+        "fields": [
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "to_name",
+            "osType": "unknown:string-1:code",
+            "slug": "to_name",
+            "title": "to_name",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "to_label",
+            "osType": "unknown:string-1:label",
+            "slug": "to_label",
+            "title": "to_label",
+            "type": "string"
+          },
+          {
+            "conceptType": "value",
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "amount",
+            "osType": "value",
+            "slug": "amount",
+            "title": "amount",
+            "type": "number"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "hired_name",
+            "osType": "date:generic",
+            "slug": "hired_name",
+            "title": "hired_name",
+            "type": "date"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_year",
+            "osType": "unknown:string-2:code",
+            "slug": "hired_year",
+            "title": "hired_year",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_month",
+            "osType": "unknown:string-3:code",
+            "slug": "hired_month",
+            "title": "hired_month",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_day",
+            "osType": "unknown:string-4:code",
+            "slug": "hired_day",
+            "title": "hired_day",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_week",
+            "osType": "unknown:string-5:code",
+            "slug": "hired_week",
+            "title": "hired_week",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_yearmonth",
+            "osType": "unknown:string-6:code",
+            "slug": "hired_yearmonth",
+            "title": "hired_yearmonth",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "hired_quarter",
+            "osType": "unknown:string-7:code",
+            "slug": "hired_quarter",
+            "title": "hired_quarter",
+            "type": "string"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "hired",
+            "osType": "date:generic",
+            "slug": "hired",
+            "title": "hired",
+            "type": "date"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "time_name",
+            "osType": "date:generic",
+            "slug": "time_name",
+            "title": "time_name",
+            "type": "date"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_year",
+            "osType": "unknown:string-8:code",
+            "slug": "time_year",
+            "title": "time_year",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_month",
+            "osType": "unknown:string-9:code",
+            "slug": "time_month",
+            "title": "time_month",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_day",
+            "osType": "unknown:string-10:code",
+            "slug": "time_day",
+            "title": "time_day",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_week",
+            "osType": "unknown:string-11:code",
+            "slug": "time_week",
+            "title": "time_week",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_yearmonth",
+            "osType": "unknown:string-12:code",
+            "slug": "time_yearmonth",
+            "title": "time_yearmonth",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_quarter",
+            "osType": "unknown:string-13:code",
+            "slug": "time_quarter",
+            "title": "time_quarter",
+            "type": "string"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "time",
+            "osType": "date:generic",
+            "slug": "time",
+            "title": "time",
+            "type": "date"
+          },
+          {
+            "conceptType": "value",
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "unique-id",
+            "osType": "value",
+            "slug": "unique_id",
+            "title": "unique-id",
+            "type": "number"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "position",
+            "osType": "unknown:string-14:code",
+            "slug": "position",
+            "title": "position",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "identifier",
+            "osType": "unknown:string-15:code",
+            "slug": "identifier",
+            "title": "identifier",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "first",
+            "osType": "unknown:string-16:code",
+            "slug": "first",
+            "title": "first",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "to_name",
+          "hired_name",
+          "hired_year",
+          "hired_month",
+          "hired_day",
+          "hired_week",
+          "hired_yearmonth",
+          "hired_quarter",
+          "hired",
+          "time_name",
+          "time_year",
+          "time_month",
+          "time_day",
+          "time_week",
+          "time_yearmonth",
+          "time_quarter",
+          "time",
+          "position",
+          "identifier",
+          "first"
+        ]
+      },
+      "profile": "data-resource"
+    }
+  ],
+  "sources": [
+    {
+      "title": "4618",
+      "url": "https://docs.google.com/spreadsheet/pub?key=0AvdkMlz2NopEdDFqM29pUVhfd3I4ckh4NGNzRkhYUkE&single=true&gid=0&output=csv"
+    }
+  ],
+  "title": "Washington DC employee salaries",
+  "profile": "data-package",
+  "owner": "6018ab87076187018fc29c94a68a3cd2"
+}
