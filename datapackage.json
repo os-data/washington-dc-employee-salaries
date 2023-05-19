@@ -164,7 +164,7 @@
       "hash": "3d9ea6f80be6910ef1ec06708c5721e0",
       "mediatype": "text/csv",
       "name": "__os_imported__dc-city-salaries",
-      "path": "https://storage.openspending.org/__os_imported__dc-city-salaries.csv",
+      "path": "https://storage.openspending.org/washington-dc-employee-salaries/__os_imported__dc-city-salaries.csv",
       "schema": {
         "fields": [
           {
